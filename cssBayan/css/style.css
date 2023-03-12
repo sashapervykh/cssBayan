@@ -32,6 +32,10 @@ h1 {
 }
 
 .bayan-item-head {
+  display: block;
+}
+
+.trigger {
   display: flex;
   margin-bottom: 1vh;
   font-size: 1em;
@@ -69,23 +73,28 @@ h1 {
   background-size: 1em 1em;
   background-image: url("../assets/svg/cross.svg");
   rotate: 45deg;
-  opacity: 0;
   transition: 0.5s;
 }
 
 .bayan-item-text {
   max-width: 90%;
+  color: blue;
+  font-weight: bolder;
 }
 
-.bayan-item-input:checked ~ .item-content {
+.bayan-item-input:checked ~ .bayan-item-head .item-content {
   opacity: 1;
   width: 95%;
   height: 50vh;
   background-size: 100% 50vh;
 }
 
-.bayan-item-input:checked ~ .bayan-item-head ~ .bayan-button {
+.bayan-item-input:checked ~ .bayan-item-head .trigger .bayan-button {
   rotate: 90deg;
+}
+
+.bayan-item-input:checked ~ .bayan-item-head .trigger .bayan-item-text {
+  color: black;
 }
 
 @media screen {
@@ -93,17 +102,25 @@ h1 {
     cursor: pointer;
   }
 
-  .bayan:hover .bayan-button {
-    opacity: 1;
+  .bayan-button {
+    opacity: 0;
   }
 
   .bayan:hover .bayan-button {
     opacity: 1;
+  }
+
+  .bayan:hover .bayan-item-text {
+    color: black;
   }
 
   .bayan-item:hover .bayan-button {
     rotate: 0deg;
     opacity: 1;
+  }
+
+  .bayan-item:active .bayan-item-text {
+    color: blue;
   }
 
   .bayan-item-head:hover {
