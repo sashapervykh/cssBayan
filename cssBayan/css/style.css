@@ -18,10 +18,15 @@ h1 {
 .wrapper {
   margin: 0 auto 0 auto;
   max-width: 80%;
+  height: fit-content;
+}
+
+.bayan {
+  height: fit-content;
 }
 
 .bayan-item-input {
-  opacity: none;
+  appearance: none;
   width: 0;
   height: 0;
 }
@@ -56,13 +61,6 @@ h1 {
   background-image: url("../assets/img/passive_aggressive.jpg");
 }
 
-.bayan-item-input:checked ~ .item-content {
-  opacity: 1;
-  width: 95%;
-  height: 50vh;
-  background-size: 100% 50vh;
-}
-
 .bayan-button {
   margin: auto 3vw auto auto;
   display: flex;
@@ -71,4 +69,48 @@ h1 {
   background-size: 1em 1em;
   background-image: url("../assets/svg/cross.svg");
   rotate: 45deg;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.bayan-item-text {
+  max-width: 90%;
+}
+
+.bayan-item-input:checked ~ .item-content {
+  opacity: 1;
+  width: 95%;
+  height: 50vh;
+  background-size: 100% 50vh;
+}
+
+@media screen {
+  .bayan {
+    cursor: pointer;
+  }
+
+  .bayan:hover .bayan-button {
+    opacity: 1;
+  }
+
+  .bayan:hover .bayan-button {
+    opacity: 1;
+  }
+
+  .bayan-item:hover .bayan-button {
+    rotate: 0deg;
+    opacity: 1;
+  }
+
+  .bayan-item-head:hover {
+    cursor: pointer;
+  }
+
+  .bayan-item:hover .item-content {
+    opacity: 1;
+    opacity: 1;
+    width: 95%;
+    height: 50vh;
+    background-size: 100% 50vh;
+  }
 }
