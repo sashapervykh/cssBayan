@@ -1,0 +1,54 @@
+body {
+  box-sizing: border-box;
+  font-family: "Sono", sans-serif;
+}
+
+header {
+  margin: 0 auto 0 auto;
+  max-width: 80%;
+  font-weight: bold;
+  border-bottom: 0.001vh solid gray;
+}
+
+h1 {
+  font-size: 5vh;
+  margin-bottom: 0.5vh;
+}
+.wrapper {
+  margin: 0 auto 0 auto;
+  max-width: 80%;
+}
+
+.bayan-item-input {
+  opacity: none;
+  width: 0;
+  height: 0;
+}
+
+.bayan-item-head {
+  display: flex;
+  margin-bottom: 1vh;
+}
+
+.item-content {
+  margin: 0 auto 0 auto;
+  width: 95%;
+  height: 50vh;
+  background-size: 100% 50vh;
+}
+
+.first-mem {
+  background-image: url("../assets/img/slowpokes.jpg");
+}
+
+.second-mem {
+  background-image: url("../assets/img/philosophers.jpg");
+}
+
+.third-mem {
+  background-image: url("../assets/img/creative_people.jpg");
+}
+
+.fourth-mem {
+  background-image: url("../assets/img/passive_aggressive.jpg");
+}
