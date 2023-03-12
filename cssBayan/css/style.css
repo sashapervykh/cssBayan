@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   font-family: "Sono", sans-serif;
+  position: static;
 }
 
 header {
@@ -28,13 +29,15 @@ h1 {
 .bayan-item-head {
   display: flex;
   margin-bottom: 1vh;
+  font-size: 1em;
 }
 
 .item-content {
   margin: 0 auto 0 auto;
-  width: 95%;
-  height: 50vh;
-  background-size: 100% 50vh;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .first-mem {
@@ -51,4 +54,21 @@ h1 {
 
 .fourth-mem {
   background-image: url("../assets/img/passive_aggressive.jpg");
+}
+
+.bayan-item-input:checked ~ .item-content {
+  opacity: 1;
+  width: 95%;
+  height: 50vh;
+  background-size: 100% 50vh;
+}
+
+.bayan-button {
+  margin: auto 3vw auto auto;
+  display: flex;
+  height: 1em;
+  width: 1em;
+  background-size: 1em 1em;
+  background-image: url("../assets/svg/cross.svg");
+  rotate: 45deg;
 }
