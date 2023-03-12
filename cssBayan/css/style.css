@@ -84,6 +84,10 @@ h1 {
   background-size: 100% 50vh;
 }
 
+.bayan-item-input:checked ~ .bayan-item-head ~ .bayan-button {
+  rotate: 90deg;
+}
+
 @media screen {
   .bayan {
     cursor: pointer;
