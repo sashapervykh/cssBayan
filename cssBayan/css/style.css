@@ -118,3 +118,50 @@ h1 {
     background-size: 100% 50vh;
   }
 }
+
+@media (min-width: 820px) and (min-height: 1180px) {
+  h1 {
+    font-size: 7vh;
+  }
+
+  .bayan-item-text {
+    font-size: 3.5vh;
+  }
+
+  .bayan-button {
+    height: 3em;
+    width: 3em;
+    background-size: 3em 3em;
+  }
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  h1 {
+    font-size: 9vh;
+  }
+
+  .bayan-item-text {
+    font-size: 4vh;
+  }
+
+  .bayan-button {
+    height: 3em;
+    width: 3em;
+    background-size: 3em 3em;
+  }
+
+  .bayan-item-input:checked ~ .item-content {
+    opacity: 1;
+    width: 60%;
+    height: 65vh;
+    background-size: 100% 65vh;
+  }
+
+  .bayan-item:hover .item-content {
+    opacity: 1;
+    opacity: 1;
+    width: 60%;
+    height: 75vh;
+    background-size: 100% 75vh;
+  }
+}
